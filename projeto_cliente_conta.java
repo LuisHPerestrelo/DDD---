@@ -1,4 +1,4 @@
-package Ex_34;
+package Ex_35;
 import java.util.Scanner;
 public class projeto_cliente_conta {
 
@@ -17,19 +17,24 @@ public class projeto_cliente_conta {
 		char atualizaemail;
 		
 		for(int i=0; i<5; i++) {
+			cliente c = new cliente();
 			
 			System.out.printf("digite o id do cliente");
 			id = ler.nextInt();
+			c.setId(id);
 			
 			System.out.printf("digite o nome do cliente");
 			nome = ler.next();
-		
+			c.setNome(nome);
+			
 			System.out.printf("digite o idade do cliente");
 			idade = ler.nextInt();
+			c.setIdade(idade);
 			
 			System.out.printf("digite o email  do cliente");
 			email = ler.next();
-		
+			c.setEmail(email);
+			
 			System.out.printf("Possue conta bancaria ?");
 			possuicontabancaria = ler.next().charAt(0);
 			
@@ -51,7 +56,7 @@ public class projeto_cliente_conta {
 				conta = null;
 			}
 			
-			cliente c = new cliente(id, nome, idade, email, conta);
+			
 			
 			listacliente[i] = c;
 			
@@ -68,7 +73,7 @@ public class projeto_cliente_conta {
 				
 				listacliente[i].atualizarEmail(email);
 				
-				System.out.printf("Email atualizado com sucesso! \n novo email: %s", listacliente[i].email);
+				System.out.printf("Email atualizado com sucesso! \n novo email: %s", listacliente[i].getEmail());
 			}
 			
 			
