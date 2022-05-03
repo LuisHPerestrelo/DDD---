@@ -9,7 +9,7 @@ public class Projeto_Clientes {
 		
 		Cliente[] listaClientes = new Cliente[10];
 		
-		for (int i=0; i<=4; i++) {
+		for (int i=0; i<=9; i++) {
 			
 		Cliente c = new Cliente();
 			
@@ -31,7 +31,7 @@ public class Projeto_Clientes {
 		
 		}
 		
-		for (int i=0; i<=4; i++) {
+		for (int i=0; i<=9; i++) {
 			
 			if (listaClientes[i].idade > 18)
 				System.out.printf("\n pessoas maiores de 18anos. \n %d, %s, %d\n", listaClientes[i].id, listaClientes[i].Nome, listaClientes[i].idade);
