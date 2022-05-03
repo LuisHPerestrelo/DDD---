@@ -5,7 +5,7 @@ public class projeto_cliente_conta {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
 		
-		cliente[] listacliente = new cliente[2];
+		cliente[] listacliente = new cliente[5];
 		char possuicontabancaria;
 		int id;
 		String nome;
@@ -16,7 +16,7 @@ public class projeto_cliente_conta {
 		
 		char atualizaemail;
 		
-		for(int i=0; i<2; i++) {
+		for(int i=0; i<5; i++) {
 			
 			System.out.printf("digite o id do cliente");
 			id = ler.nextInt();
@@ -56,7 +56,7 @@ public class projeto_cliente_conta {
 			listacliente[i] = c;
 			
 		}
-		for(int i=0; i<2; i++) {
+		for(int i=0; i<5; i++) {
 			System.out.printf("\n%s", listacliente[i].exibirnomeidade());
 			System.out.printf("\n%s", listacliente[i].exibirdadosconta());
 			System.out.printf("\nDeseja atualizar o email ?");
