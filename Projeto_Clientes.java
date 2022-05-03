@@ -9,7 +9,7 @@ public class Projeto_Clientes {
 		
 		Cliente[] listaClientes = new Cliente[10];
 		
-		for (int i=0; i<=9; i++) {
+		for (int i=0; i<=9 ; i++) {
 			
 		Cliente c = new Cliente();
 			
