@@ -1,11 +1,9 @@
-package Ex_35;
+package Ex_37;
+
+import Ex_37.contabancaria;
 
 public class cliente {
 	private int id;
-	private String nome;
-	private int idade;
-	private String email;
-	private contabancaria conta;
 	
 	public int getId() {
 		return id;
@@ -14,7 +12,7 @@ public class cliente {
 	public void setId(int id) {
 		this.id = id;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
@@ -22,7 +20,7 @@ public class cliente {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
+
 	public int getIdade() {
 		return idade;
 	}
@@ -30,7 +28,7 @@ public class cliente {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	
+
 	public String getEmail() {
 		return email;
 	}
@@ -38,7 +36,7 @@ public class cliente {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
 	public contabancaria getConta() {
 		return conta;
 	}
@@ -46,6 +44,12 @@ public class cliente {
 	public void setConta(contabancaria conta) {
 		this.conta = conta;
 	}
+
+	private String nome;
+	private int idade;
+	private String email;
+	private contabancaria conta;
+
 	
 	cliente(){
 		
@@ -69,7 +73,7 @@ public class cliente {
 	
 	public String exibirdadosconta() {
 		if(this.conta != null)
-			return "Ag:" + this.conta.agencia + "\nnum:" + this.conta.numero;
+			return "Ag:" + this.conta.getAgencia() + "\nnum:" + this.conta.getNumero();
 		else
 			return "não tem conta!";
 	}
@@ -78,3 +82,4 @@ public class cliente {
 }
 	
 	
+

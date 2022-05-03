@@ -1,10 +1,28 @@
-package Ex_35;
+package Ex_37;
 
 public class contabancaria {
-	public String agencia; 
-	public String numero;
-	public double saldo;
+	private String agencia; 
 	
+	public String getAgencia() {
+		return agencia;
+	}
+	public void setAgencia(String agencia) {
+		this.agencia = agencia;
+	}
+	public String getNumero() {
+		return numero;
+	}
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	private String numero;
+	private double saldo;
 	
 	contabancaria(){
 		
