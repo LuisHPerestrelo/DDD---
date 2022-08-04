@@ -1,2 +1,2 @@
 # JAVA
-Exercícios de DDD
+Checkpoint 1
